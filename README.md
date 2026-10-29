@@ -1,8 +1,8 @@
 <!--
   STRHercules / STRHercules — GitHub profile README
   All featured repositories and descriptions were checked against their public READMEs.
-  The GitHub Creature panel links to the real creature page. To show the original artwork
-  instead, download the card image from GitHub Creature and add it as assets/my-creature.png.
+  The GitHub Creature section features my original Tri-Headed Chimera card,
+  stored locally as assets/github-creature-strhercules.png.
 -->
 
 <div align="center">
@@ -107,21 +107,15 @@ A **local-first development dashboard** that builds on CodexLB and TokDash. Livi
 
 ---
 
-## My GitHub Creature
+## My GitHub Creature · The Tri-Headed Chimera
 
 <div align="center">
-  <a href="https://www.githubcreature.com/strhercules" title="Meet STRHercules' GitHub Creature">
-    <img src="./assets/creature-gateway.svg" alt="Enter the bestiary — view STRHercules' GitHub Creature" width="760" />
+  <a href="https://www.githubcreature.com/strhercules" title="Meet STRHercules' GitHub Creature — The Tri-Headed Chimera">
+    <img src="./assets/github-creature-strhercules.png" alt="The Tri-Headed Chimera, STRHercules' GitHub Creature — a three-headed dragon, lion and goat chimera against a stormy sky" width="560" />
   </a>
-  <p><em>Every repository has a story. Apparently mine has a creature, too.</em></p>
-  <a href="https://www.githubcreature.com/strhercules"><strong>Meet my creature on GitHub Creature</strong></a>
+  <p><em>Summoned from code, chaos, and more ambitious projects than any one creature should have to guard.</em></p>
+  <p><a href="https://www.githubcreature.com/strhercules"><strong>View my creature on GitHub Creature</strong></a></p>
 </div>
-
-<!-- To replace the gateway card with your original creature art:
-     1. On https://www.githubcreature.com/strhercules choose Download > Card with effects.
-     2. Save the image in this repository as assets/my-creature.png.
-     3. Change ./assets/creature-gateway.svg to ./assets/my-creature.png above.
-     The external card page remains linked either way. -->
 
 ---
 
