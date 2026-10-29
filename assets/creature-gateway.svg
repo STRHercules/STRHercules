@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="245" viewBox="0 0 900 245" role="img" aria-label="Meet STRHercules' GitHub Creature — enter the bestiary">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17112e"/><stop offset="1" stop-color="#092833"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ad76ff"/><stop offset="1" stop-color="#38d4c4"/></linearGradient>
+    <radialGradient id="vortex"><stop stop-color="#8c70f8" stop-opacity=".72"/><stop offset=".45" stop-color="#48d2c7" stop-opacity=".2"/><stop offset="1" stop-color="#17112e" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="#aaa3da" opacity=".16"/></pattern>
+  </defs>
+  <rect x="2" y="2" width="896" height="241" rx="19" fill="url(#bg)" stroke="url(#edge)" stroke-width="3"/>
+  <rect x="3" y="3" width="894" height="239" rx="18" fill="url(#dots)"/>
+  <circle cx="168" cy="123" r="107" fill="url(#vortex)"/>
+  <circle cx="168" cy="123" r="83" fill="none" stroke="#9d80ed" stroke-width="1" opacity=".48"/>
+  <circle cx="168" cy="123" r="64" fill="none" stroke="#5ce1d7" stroke-width="3" opacity=".76"/>
+  <circle cx="168" cy="123" r="49" fill="#251947" opacity=".9" stroke="#aa89f6" stroke-width="2"/>
+  <path d="M169 80C184 99 191 115 187 130L202 155 176 149 166 169 155 149 132 155 146 131C144 110 154 97 169 80Z" fill="#c0a3ff"/>
+  <path d="M153 117L165 126 180 116M154 146L169 136 182 146" fill="none" stroke="#251947" stroke-width="4" stroke-linecap="round"/>
+  <text x="304" y="86" fill="#bda9ff" font-size="15" font-family="Verdana,DejaVu Sans,sans-serif" letter-spacing="3">CREATURE ENCOUNTER</text>
+  <text x="303" y="131" fill="#faf8ff" font-size="34" font-family="Verdana,DejaVu Sans,sans-serif" font-weight="bold">MEET MY GITHUB CREATURE</text>
+  <text x="304" y="161" fill="#b9c9e7" font-size="16" font-family="Verdana,DejaVu Sans,sans-serif">A little fantasy, powered by a lot of commits.</text>
+  <rect x="304" y="179" rx="11" width="242" height="33" fill="#39305f" stroke="#917fdd" stroke-opacity=".6"/>
+  <text x="321" y="200" fill="#eae1ff" font-size="12" font-family="Verdana,DejaVu Sans,sans-serif" font-weight="bold" letter-spacing=".5">OPEN MY CREATURE PAGE  &gt;</text>
+</svg>
