@@ -1,0 +1,30 @@
+# OPTIONAL: Uncomment or move into .github/workflows/ after setting SUMMARY_GITHUB_TOKEN.
+# Repository secret: Settings > Secrets and variables > Actions > New repository secret
+# Name: SUMMARY_GITHUB_TOKEN
+# Value: a fine-grained PAT with public-repository read access. Never commit the token.
+name: Refresh STRHercules profile summary cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * *" # once daily, UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: STRHercules
+          BRANCH_NAME: main
+          TIME_ZONE: America/Chicago
+          THEME: github_dark
+          ANIMATION: draw
+          DURATION: "2.5"
+          AUTO_PUSH: true
