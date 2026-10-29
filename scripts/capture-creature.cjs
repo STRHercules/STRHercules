@@ -2,6 +2,7 @@
  * Build a GitHub profile-ready card using REAL artwork and stats from
  * https://www.githubcreature.com/strhercules (not placeholders).
  * If extraction fails, this script does not change the README.
+ * Run from the repository root via the GitHub Actions workflow.
  */
 const fs = require('node:fs');
 const { chromium } = require(process.env.PLAYWRIGHT_REQUIRE || 'playwright');
