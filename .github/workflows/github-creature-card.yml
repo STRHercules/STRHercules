@@ -1,0 +1,48 @@
+name: Build my GitHub Creature card
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/github-creature-card.yml'
+      - 'scripts/capture-creature.cjs'
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install headless Chromium
+        run: |
+          npm install --prefix /tmp/githubcreature --no-audit --no-fund playwright@1.56.1
+          /tmp/githubcreature/node_modules/.bin/playwright install --with-deps chromium
+
+      - name: Read my actual creature and build the wide card
+        env:
+          PLAYWRIGHT_REQUIRE: /tmp/githubcreature/node_modules/playwright
+        run: node scripts/capture-creature.cjs
+
+      - name: Publish creature artwork and updated README
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md assets/github-creature-strhercules.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Show real GitHub Creature card on profile'
+            git push
+          fi
